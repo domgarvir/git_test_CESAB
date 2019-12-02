@@ -2,7 +2,7 @@
 playing with git
 and some more letters
 
-#NEW TITLE
+# NEW TITLE
 here some text
 
 ## new section
