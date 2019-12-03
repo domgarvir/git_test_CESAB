@@ -1,0 +1,13 @@
+library(MASS)
+data("iris")
+nrow(iris)
+names(iris)
+lm1<-(Sepal.Length~Petal.Width)
+anova(lm1)
+png("iris-plot.png")
+plot(iris$Sepal.Length~iris$Petal.Width)
+abline(lm1)
+dev.off()
+
+iris.setosa<-iris[iris$Species=="setosa",]
+lm1<-lm(Sepal.Length~Petal.Width, data=iris.setosa)
