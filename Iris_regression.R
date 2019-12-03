@@ -7,7 +7,14 @@ anova(lm1)
 png("iris-plot.png")
 plot(iris$Sepal.Length~iris$Petal.Width)
 abline(lm1)
+abline(lm1)
 dev.off()
 
 iris.setosa<-iris[iris$Species=="setosa",]
 lm1<-lm(Sepal.Length~Petal.Width, data=iris.setosa)
+anova(lm1)
+png("iris-plot-setosa.png")
+plot(iris.setosa$Sepal.Length~iris.setosa$Petal.Width)
+abline(lm1)
+
+dev.off()

@@ -2,3 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
+*.pdf
+*.html
+*.bib
+*.png
+git_test_CESAB.Rproj
