@@ -1,0 +1,46 @@
+---
+title: "Iris Report"
+author: "Virginia"
+date: "3 de diciembre de 2019"
+#abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut scelerisque nisi. Nullam at nisl egestas, varius nisl vitae, dignissim ex. Morbi scelerisque et nibh sit amet efficitur. Etiam aliquet libero sed tempor gravida. Proin nec turpis a nisl congue vulputate ac et purus. Sed ex quam, congue ac nisi nec, tincidunt hendrerit orci. Donec imperdiet metus nec tincidunt ornare. Cras a erat accumsan, efficitur est in, aliquet sapien. Morbi posuere massa ut cursus convallis. Etiam sit amet interdum massa. Integer vehicula sapien metus, vel eleifend nisl gravida ut. Nullam et magna at ante porttitor porta nec ac risus. Maecenas non suscipit urna, nec ultricies nisi. Quisque euismod nisi id nibh pharetra elementum. Sed ultricies sem quis diam maximus, ac viverra lectus ultrices. Praesent feugiat feugiat lorem ac euismod. Morbi feugiat, mi non pretium vulputate, sem ipsum feugiat lectus, vitae laoreet quam lectus et libero. Aliquam id metus in mi pulvinar cursus. Phasellus lacinia elit vel gravida convallis. Quisque eleifend lectus a orci imperdiet condimentum."
+bibliography: biblio.bib
+
+output:
+  pdf_document: 
+    #default
+    toc: true
+    number_sections: true
+    toc_depth: 2
+  html_document:
+    df_print: paged
+    toc: true
+    toc_float: true
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>. [@key]Vespi
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# References
